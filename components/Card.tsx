@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CalendarFold } from "lucide-react";
-import { Calendar } from "@/components/ui/calendar"
+ 
 
 export function AppointmentCard() {
   return (

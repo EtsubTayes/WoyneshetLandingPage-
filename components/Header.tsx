@@ -1,7 +1,7 @@
 "use client"; 
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { Menu, CalendarFold } from "lucide-react"
+import { Menu } from "lucide-react"
 import Link from "next/link"
 import '@fontsource/poppins/400.css';  
 import '@fontsource/poppins/700.css';  

@@ -1,6 +1,6 @@
 "use client"; // Ensure this is treated as a client-side component
 
-import Image from 'next/image';
+ 
 import { Button } from '@/components/ui/button';
 import { Calendar, MoveDown, Facebook, Instagram, Home } from 'lucide-react'; // Importing icons
 import { AppointmentCard } from '@/components/Card';
