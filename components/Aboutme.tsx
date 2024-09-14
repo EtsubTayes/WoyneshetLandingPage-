@@ -1,6 +1,6 @@
 "use client"; // Ensure this is treated as a client-side component
 
-import Image from 'next/image';
+ 
 import { motion } from 'framer-motion';
 
 export default function AboutMe() {
@@ -8,7 +8,7 @@ export default function AboutMe() {
     <section className="container mx-auto px-6 md:px-10 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 h-full mt-52 relative">
       {/* Text Section with Scroll Animation */}
       <motion.div
-        className="md:w-1/2 w-full text-gray-900 flex flex-col items-start text-left mt-16 md:mt-0"
+        className="md:w-1/2 w-full text-gray-900 flex flex-col items-start text-left mt-16 md:mt-12 md:py-12 "
         initial={{ opacity: 0, y: 50 }} // Initial state before scrolling into view
         whileInView={{ opacity: 1, y: 0 }} // Animation when it comes into view
         transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and ease
@@ -36,14 +36,8 @@ export default function AboutMe() {
           id="Me"
           whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)" }} // Scale up on hover
         >
-          {/* Image inside the motion.div */}
-          <Image
-            src="/woinshet-picture.jpg" // Replace with actual image path
-            alt="Woinshet Kassa"
-            width={450}
-            height={550}
-            className="rounded-lg object-cover"
-          />
+         
+         
         </motion.div>
       </div>
     </section>

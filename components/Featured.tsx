@@ -9,31 +9,32 @@ export default function FeaturedSection() {
       title: "Luxury Villa",
       location: "Beverly Hills, CA",
       price: "$3,200,000",
-      imgSrc: "/villa.jpg", // Replace with actual image paths
+      imgSrc: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c", // Corrected URL
       status: "Sold",
     },
     {
       title: "Modern Apartment",
       location: "Manhattan, NY",
       price: "$850,000",
-      imgSrc: "/apartment.jpg",
+      imgSrc: "https://images.unsplash.com/photo-1568605114967-8130f3a36994", // Working Unsplash image
       status: "Rented",
     },
     {
       title: "Family Home",
       location: "Miami, FL",
       price: "$1,500,000",
-      imgSrc: "/family-home.jpg",
+      imgSrc: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Corrected Unsplash URL
       status: "Sold",
     },
     {
       title: "Beach House",
       location: "Malibu, CA",
       price: "$4,500,000",
-      imgSrc: "/beach-house.jpg",
+      imgSrc: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Corrected Unsplash URL
       status: "Rented",
     },
   ];
+  
 
   return (
     <motion.section

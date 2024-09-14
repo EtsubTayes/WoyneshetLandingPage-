@@ -1,6 +1,5 @@
 "use client"; // Ensure this is treated as a client-side component
 
- 
 import { Button } from '@/components/ui/button';
 import { Calendar, MoveDown, Facebook, Instagram, Home } from 'lucide-react'; // Importing icons
 import { AppointmentCard } from '@/components/Card';
@@ -11,21 +10,21 @@ import '@fontsource/poppins/700.css';
 export default function HeroSection() {
   return (
     <motion.section 
-      className="relative h-screen flex items-center font-family:[Poppins]"
+      className="relative min-h-screen flex items-center font-family:[Poppins]"
       initial={{ opacity: 0 }} // Initial state
       animate={{ opacity: 1 }} // Fade in
       transition={{ duration: 1 }} // Transition duration
     >
-      <div className="container mx-auto px-10  flex flex-col md:flex-row items-center gap-12 h-[800px]   border-b pb-12">
+      <div className="container mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row items-center gap-12 md:h-[800px] h-auto border-b pb-12">
         
         {/* Right Section with Text and Button */}
         <motion.div 
-          className="md:w-1/2 w-full text-gray-900 flex flex-col items-start md:items-center text-center h-full"
+          className="md:w-1/2 w-full text-gray-900 flex flex-col items-start md:items-center text-center h-auto"
           initial={{ x: 50, opacity: 0 }} // Slide in from right
           animate={{ x: 0, opacity: 1 }} // Slide to original position
           transition={{ duration: 1.2 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-24 text-green-900 font-family:['Poppins']">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-12 md:mt-24 text-green-900 font-family:['Poppins']">
             Your Trusted Real Estate Agent
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-lg">
@@ -82,7 +81,7 @@ export default function HeroSection() {
 
         {/* Left Section with Appointment Form */}
         <motion.div 
-          className="md:w-1/2 w-full h-[800px] relative flex items-center justify-center rounded-lg"
+          className="md:w-1/2 w-full h-auto relative flex items-center justify-center rounded-lg"
           id='hero'
           initial={{ x: -50, opacity: 0 }} // Slide in from left
           animate={{ x: 0, opacity: 1 }}

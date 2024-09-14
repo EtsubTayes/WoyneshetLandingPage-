@@ -11,14 +11,15 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CalendarFold } from "lucide-react";
- 
 
 export function AppointmentCard() {
   return (
-    <Card className="w-[350px] shadow-md border border-gray-200 rounded-lg font-family:['Poppins']">
+    <Card className="w-full max-w-full md:w-[350px] shadow-md border border-gray-200 rounded-lg font-family:['Poppins']">
       <CardHeader className="text-left p-6">
         <CardTitle className="text-2xl font-bold text-gray-800">Schedule an Appointment</CardTitle>
-        <CardDescription className="text-sm text-gray-500">Fill in the details to book a consultation.</CardDescription>
+        <CardDescription className="text-sm text-gray-500">
+          Fill in the details to book a consultation.
+        </CardDescription>
       </CardHeader>
       <CardContent className="p-6">
         <form>
@@ -50,15 +51,14 @@ export function AppointmentCard() {
         </form>
       </CardContent>
       <CardFooter className="flex justify-between gap-4 p-6">
-  <Button variant="outline" className="text-gray-600 border-gray-300 hover:bg-gray-100">
-    Cancel
-  </Button>
-  <Button  variant={"default"} className="flex justify-between gap-4">
-    <CalendarFold className="w-5 h-5" />
-    <span>Schedule</span>
-  </Button>
-</CardFooter>
-
+        <Button variant="outline" className="text-gray-600 border-gray-300 hover:bg-gray-100">
+          Cancel
+        </Button>
+        <Button variant={"default"} className="flex justify-between gap-4">
+          <CalendarFold className="w-5 h-5" />
+          <span>Schedule</span>
+        </Button>
+      </CardFooter>
     </Card>
   );
 }
